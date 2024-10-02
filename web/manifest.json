@@ -1,6 +1,6 @@
 {
-    "name": "pixabay_wallpaper",
-    "short_name": "pixabay_wallpaper",
+    "name": "Wallpaper Genie",
+    "short_name": "Wallpaper Genie",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
