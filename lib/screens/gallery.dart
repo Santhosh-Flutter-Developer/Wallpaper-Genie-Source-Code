@@ -264,7 +264,10 @@ final controller = Get.isRegistered<GalleryController>()?Get.find<GalleryControl
             ),);
           }):Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Image.asset("assets/nodata.gif",fit: BoxFit.cover,),
+            child:Container(
+              height: 300,
+              width: 300,
+              child: Image.asset("assets/no-data.png"))
           ))
         ],),
       )
