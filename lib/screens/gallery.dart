@@ -92,7 +92,7 @@ final controller = Get.isRegistered<GalleryController>()?Get.find<GalleryControl
                 ),
               ]
             )),
-      )):Container(
+      )):SizedBox(
         height: 70,
         child: Padding(
           padding: const EdgeInsets.all(10.0),

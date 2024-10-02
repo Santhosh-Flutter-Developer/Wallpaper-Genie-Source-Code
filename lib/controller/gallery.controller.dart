@@ -1,5 +1,5 @@
 
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, prefer_typing_uninitialized_variables
 
 import 'dart:convert';
 
@@ -12,7 +12,6 @@ import 'dart:io';
 // import 'dart:html' as html;
 import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
-import 'package:wallpaper_genie/routes/routes.dart';  // Only for Android and iOS
 
 
 class GalleryController extends GetxController {
@@ -118,7 +117,7 @@ Future<void> downloadImage(String url, String fileName) async {
 await http.get(Uri.parse(url)).then((onResp) {
        
         // hits=json.decode(onResp.body);
-        this.imagesDate=json.decode(onResp.body);
+        imagesDate=json.decode(onResp.body);
         hits.addAll(imagesDate['hits']);
         if(imagesDate['totalHits']%size.value==0){
           totalPages.value=imagesDate['totalHits']~/size.value;

@@ -34,7 +34,7 @@ final controller = Get.isRegistered<GalleryController>()?Get.find<GalleryControl
             Expanded(
               
               child: controller.imageUI(height:MediaQuery.of(context).size.height)),
-            Container(
+            SizedBox(
               width: 500,
               child: Padding(
                 padding: const EdgeInsets.only(top:20.0),
